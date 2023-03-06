@@ -1,0 +1,8 @@
+{
+    "name": "root/app",
+    "type": "project",
+    "require-dev": {
+        "symfony/var-dumper": "^5.3",
+        "eaglewu/swoole-ide-helper": "dev-master"
+    }
+}
