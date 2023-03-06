@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+require_once __DIR__.'/vendor/autoload.php';
+
+use Groovey\Application;
+
+class App extends Application
+{
+    use Groovey\Traits\Trace;
+}
+
+$app = new App();
+$app->debug(true);
+$app->register('console', 'Groovey\Providers\Console');
+$app->register('tester', 'Groovey\Tester\Providers\Tester');
+
+$console = $app->get('console');
+
+$console->add([
+        'Groovey\Tester\Commands\Sample',
+        'Groovey\Tester\Commands\About',
+        'Groovey\Tester\Commands\Ask'
+    ]);
+
+$status = $console->run();
+
+exit($status);

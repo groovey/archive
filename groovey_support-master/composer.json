@@ -1,0 +1,39 @@
+{
+    "name": "groovey/support",
+    "description": "Groovey Support Package",
+    "keywords": ["groovey"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "groovey/groovey" : "dev-master",
+        "symfony/yaml" : "~4.1",
+        "symfony/var-dumper" : "~4.1",
+        "symfony/process" : "~4.1",
+        "illuminate/validation" : "~5.7",
+        "illuminate/support" : "~5.7",
+        "twig/twig" : "~2.5",
+        "nesbot/carbon": "~1.26",
+        "jdorn/sql-formatter" : "~1.2",
+        "guzzlehttp/guzzle" : "~6.3",
+        "ircmaxell/random-lib" : "~1.2"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/common.php",
+            "src/Helpers/array.php",
+            "src/Helpers/date.php",
+            "src/Helpers/string.php",
+            "src/Helpers/html.php",
+            "src/Helpers/cli.php"
+        ],
+        "psr-4": {
+            "Groovey\\Support\\": "src"
+        }
+    }
+}

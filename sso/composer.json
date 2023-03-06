@@ -1,0 +1,29 @@
+{
+    "name": "groovey/sso",
+    "description": "Groovey SSO Package.",
+    "license": "MIT",
+    "keywords": ["silex", "groovey"],
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex" : "~2.0",
+        "symfony/yaml" : "~3.0",
+        "groovey/console" : "dev-master",
+        "groovey/migration" : "dev-master",
+        "groovey/db" : "dev-master",
+        "groovey/seeder" : "dev-master",
+        "groovey/support" : "dev-master",
+        "groovey/tester" : "dev-master",
+        "groovey/jwt" : "dev-master",
+        "groovey/security" : "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\SSO\\": "src"
+        }
+    }
+}

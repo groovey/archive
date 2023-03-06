@@ -1,0 +1,21 @@
+{
+    "name": "groovey/breadcrumb",
+    "description": "Groovey Breadcrumb Package.",
+    "license": "MIT",
+    "keywords": ["silex", "groovey"],
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex" : "~2.0",
+        "twig/twig" : "~1.24"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\Breadcrumb\\": "src"
+        }
+    }
+}

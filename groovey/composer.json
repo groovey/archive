@@ -1,0 +1,28 @@
+{
+    "name": "groovey/groovey",
+    "description": "Groovey Framework.",
+    "keywords": ["silex", "groovey"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "filp/whoops" : "*",
+        "symfony/http-foundation" : "*",
+        "symfony/routing" : "*",
+        "symfony/dependency-injection" : "*",
+        "symfony/var-dumper" : "*",
+        "symfony/http-kernel" : "*",
+        "symfony/debug" : "*",
+        "symfony/console" : "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\": "src"
+        }
+    }
+}

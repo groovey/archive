@@ -1,0 +1,21 @@
+{
+    "name": "groovey/jwt",
+    "description": "Groovey Json Web Token.",
+    "keywords": ["silex", "groovey"],
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex" : "~2.0",
+        "firebase/php-jwt" : "~5.0",
+        "groovey/support" : "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\JWT\\": "src"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "groovey/tester",
+    "description": "Groovey Tester Package.",
+    "keywords": ["groovey"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "groovey/groovey": "dev-master",
+        "groovey/support" : "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\Tester\\": "src"
+        }
+    }
+}

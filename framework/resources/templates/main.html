@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<body class="light-skin fixed-navbar sidebar-scroll">
+
+    {% include 'header.html' %}
+
+    {% include 'menu.html' %}
+
+    <div id="wrapper">
+
+
+        <div class="content">
+
+            {% include 'breadcrumb.html' %}
+
+            <!-- {% include 'dashboard.html' %} -->
+
+            {# include 'table.html' with {'title' : title} #}
+
+            {% include 'form.html' with {'title' : title} %}
+
+        </div>
+
+        {% include 'footer.html' %}
+
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% if datas|length > 0 %}
+
+{% for data in datas %}
+<tr>
+    {%for value in data %}
+    <td class="{{value['align']}}">{{value['row']|raw}}</td>
+    {% endfor%}
+</tr>
+{% endfor%}
+
+{% else %}
+<tr>
+	<td colspan='100%' align="center">{{ message }}</td>
+</tr>
+{% endif %}

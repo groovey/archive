@@ -1,0 +1,18 @@
+author: Groovey
+date: '2016-06-26 17:27:05'
+changelog: Post articles.
+
+up: >
+
+    DROP TABLE IF EXISTS posts;
+
+    CREATE TABLE `posts` (
+    `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    `user_id` int(11) NOT NULL,
+    `title` varchar(255) NOT NULL,
+    `content` TEXT NOT NULL
+    ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+down: >
+
+    DROP TABLE `posts`;

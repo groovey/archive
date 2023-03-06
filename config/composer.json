@@ -1,0 +1,22 @@
+{
+    "name": "groovey/config",
+    "description": "Groovey Config Package.",
+    "license": "MIT",
+    "keywords": ["silex", "groovey"],
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex" : "~2.0",
+        "illuminate/config": "~5.2",
+        "illuminate/filesystem": "~5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\Config\\": "src"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+use Silex\Application;
+use Groovey\Console\Providers\ConsoleServiceProvider;
+
+include __DIR__.'/vendor/autoload.php';
+
+$app = new Application();
+
+$app->register(new ConsoleServiceProvider(), [
+        'console.name'    => 'Groovey',
+        'console.version' => '1.0.0',
+    ]);
+
+$console = $app['console'];
+
+$console->addCommands([
+        new Groovey\Generator\Commands\About(),
+        new Groovey\Generator\Commands\Create(),
+    ]);
+
+$status = $console->run();
+
+exit($status);

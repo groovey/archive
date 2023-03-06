@@ -1,0 +1,16 @@
+.breadcrumb {
+  padding: 2px 0px;
+  background-color:$color-bright;
+  li {
+      display: inline-block;
+
+      + li:before {
+        padding: 0 5px;
+        font-weight: bold;
+      }
+  }
+  > .active {
+      color: lighten($color-text,20%);
+  }
+
+}

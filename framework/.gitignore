@@ -1,0 +1,16 @@
+vendor/*
+node_modules/*
+
+*.sass-cache
+*.sublime-project
+*.sublime-workspace
+*.idea
+*.map
+
+.DS_Store
+.DS_Store?
+
+Thumbs.db
+composer.lock
+composer.phar
+npm-debug.log
