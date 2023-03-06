@@ -1,0 +1,21 @@
+{
+    "name": "groovey/validator",
+    "description": "Groovey Validator Package.",
+    "keywords": ["silex", "groovey"],
+    "authors": [
+        {
+            "name": "Harold Kim Cantil",
+            "email": "pokoot@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex" : "~2.0",
+        "illuminate/validation" : "~5.2",
+        "groovey/support" : "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groovey\\Validator\\": "src"
+        }
+    }
+}
