@@ -1,15 +1,30 @@
-#### Helpers
+# Support
+Groovey Support Package
 
-Common helper functions.
+## Installation
 
-#### Installation
+    $ composer require groovey/support
 
-```bash
-$ composer require groovey/support
+## Usage
+
+```php
+
+$trace = $app->get('trace')->getInstance();
+$trace->show(true);
+$trace->debug('test');
 ```
 
-#### Test
+## Test Cases
 
-```bash
-$ ./vendor/bin/phpunit tests
-```
+Visit the test cases for more examples.
+
+    $ phpunit ./tests
+    $ phpunit ./tests/DateTest.php
+
+## Supported Libraries
+
+   * [Carbon](https://github.com/briannesbitt/Carbon)
+   * [SQL Formatter](https://github.com/jdorn/sql-formatter)
+   * [Guzzle](https://github.com/guzzle/guzzle)
+   * [Random String](https://github.com/ircmaxell/RandomLib)
+
