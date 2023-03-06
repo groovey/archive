@@ -1,3 +1,3 @@
 # archive
 
-Old projects
+Depreciated projects that are not being used anymore
